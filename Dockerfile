@@ -1,4 +1,4 @@
-FROM eclipse-temurin:25-jdk
-COPY ./target/classes/com /tmp/com
+FROM eclipse-temurin:25
+COPY ./target/classes/org /tmp/org
 WORKDIR /tmp
-ENTRYPOINT ["java", "com.napier.sem.App"]
+ENTRYPOINT ["java", "org.example.Main"]
